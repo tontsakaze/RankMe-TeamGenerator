@@ -3685,9 +3685,6 @@ public Action CMD_HideChat(int client, int args){
 // AND CANT BE FOUND FROM THE ORIGINAL PLUGIN  |
 // = = = = = = = = = = = = = = = = = = = = = = =
 
-static const char genTeams_HowToMsg[] = "Usage: sm_randomteams 0/1/2 || 0=Random, 1=Balanced, 2=Extra balanced";
-static const char genTeams_FailMsg[] = "Team Gen: Not enough players with score to generate teams!";
-
 /*********************************************************
  * Switch clients teams, updates its model and respawns it
  * Code copied from AlliedMods.net forums
@@ -3743,8 +3740,6 @@ void SetPlayersToNewRandomizedTeams(int[] T1_clients, int[] T1_scores, int[] T2_
             }
         }
     }
-    
-    ServerCommand("mp_restartgame 1");
     
     // SHOW SCORE DIFFERENCES
     int avgTeam01 = (iTeam01 > 0) ? RoundToCeil(float(score01)/float(iTeam01)) : 0 ;
@@ -3975,7 +3970,7 @@ bool RandomizeTeams(int type){
 public Action CMD_MpGenTeams(int args){
     if (args < 1)
     {
-        PrintToServer(genTeams_HowToMsg);
+        PrintToServer("%T", "GenTeam_HowToCommand");
         return Plugin_Handled;
     }
     
@@ -3984,10 +3979,10 @@ public Action CMD_MpGenTeams(int args){
     
     if(StringToInt(mode)==0 || StringToInt(mode)==1 || StringToInt(mode)==2 ){
         bool bSuccess = RandomizeTeams(StringToInt(mode));
-        if( !bSuccess ){ PrintToServer(genTeams_FailMsg); }
+        if( !bSuccess ){ PrintToServer("%T", "GenTeam_Fail"); }
     }
     else{
-        PrintToServer(genTeams_HowToMsg);
+        PrintToServer("%T", "GenTeam_HowToCommand");
     }
     
     return Plugin_Handled;

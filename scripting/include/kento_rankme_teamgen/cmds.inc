@@ -3845,6 +3845,26 @@ void SortClientScoresBestFirst(int[] clients, int[] scores){
 }
 
 
+void PrintStartGenTeamInfo(int mode){
+    for(int i=1; i<=MaxClients; i++){
+        if (IsClientInGame(i) && GetClientTeam(i) != CS_TEAM_NONE) {
+            if(mode==0){ 
+                CPrintToChat(i, "{orange}%T", "GenTeam_BeginGenMode0", i); 
+                PrintToServer("%T", "GenTeam_BeginGenMode0"); 
+            }
+            if(mode==1){ 
+                CPrintToChat(i, "{orange}%T", "GenTeam_BeginGenMode1", i);
+                PrintToServer("%T", "GenTeam_BeginGenMode1");
+            }
+            if(mode==2){ 
+                CPrintToChat(i, "{orange}%T", "GenTeam_BeginGenMode2", i);
+                PrintToServer("%T", "GenTeam_BeginGenMode2"); 
+            }
+        }
+    }
+}
+
+
 /*********************************************************
  * Beginning of team generation. Counts all clients, retrieves their
  * scores from the database and generates teams based on given type.
@@ -3960,7 +3980,15 @@ bool RandomizeTeams(int type){
         }
     }
     
+    
+    for(int i=1; i<=MaxClients; i++){
+        if (IsClientInGame(i) && GetClientTeam(i) != CS_TEAM_NONE) {
+            CPrintToChat(i, "{orange}...%T\n", "GenTeam_Complete", i); 
+            PrintToServer("...%T\n", "GenTeam_Complete"); 
+        }
+    }
     SetPlayersToNewRandomizedTeams(T1_clients,T1_scores,T2_clients,T2_scores);
+    
     
     return true;
 }
@@ -3978,6 +4006,8 @@ public Action CMD_MpGenTeams(int args){
     GetCmdArg(1,mode,sizeof(mode));
     
     if(StringToInt(mode)==0 || StringToInt(mode)==1 || StringToInt(mode)==2 ){
+        PrintStartGenTeamInfo(StringToInt(mode));
+        
         bool bSuccess = RandomizeTeams(StringToInt(mode));
         if( !bSuccess ){ PrintToServer("%T", "GenTeam_Fail"); }
     }
@@ -3993,7 +4023,6 @@ public Action CMD_MpGenTeams(int args){
 public Action CMD_SmGenTeams(int client, int args){
     if (args < 1)
     {
-        CPrintToChat(client, "%T", "GenTeam_HowToCommand", client);
         return Plugin_Handled;
     }
     
@@ -4001,6 +4030,8 @@ public Action CMD_SmGenTeams(int client, int args){
     GetCmdArg(1,mode,sizeof(mode));
     
     if(StringToInt(mode)==0 || StringToInt(mode)==1 || StringToInt(mode)==2 ){
+        PrintStartGenTeamInfo(StringToInt(mode));
+    
         bool bSuccess = RandomizeTeams(StringToInt(mode));
         if( !bSuccess ){ CPrintToChat(client, "%T", "GenTeam_Fail", client); }
     }

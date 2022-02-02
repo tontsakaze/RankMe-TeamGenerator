@@ -817,4 +817,24 @@
 		"#format"	"{1:s},{2:d},{3:d}"
 		"fi"		"{1} | KA: {2} | YHT: {3}"
 	}
+
+	"GenTeam_BeginGenMode0"
+	{
+		"fi"		"Team Gen: Generoidaan joukkoeita käyttäen Satunnainen-moodia..."
+	}
+
+	"GenTeam_BeginGenMode1"
+	{
+		"fi"		"Team Gen: Generoidaan joukkoeita käyttäen Tasoitettu-moodia..."
+	}
+
+	"GenTeam_BeginGenMode2"
+	{
+		"fi"		"Team Gen: Generoidaan joukkoeita käyttäen Extra tasoitettu -moodia..."
+	}
+
+	"GenTeam_Complete"
+	{
+		"fi"		"Valmis!"
+	}
 }

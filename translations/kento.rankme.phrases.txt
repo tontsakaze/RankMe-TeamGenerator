@@ -815,4 +815,24 @@
 		"#format"	"{1:s},{2:d},{3:d}"
 		"en"		"{1} | AVG: {2} | OVERALL: {3}"
 	}
+
+	"GenTeam_BeginGenMode0"
+	{
+		"en"		"Team Gen: Begin generating teams using Random-mode..."
+	}
+
+	"GenTeam_BeginGenMode1"
+	{
+		"en"		"Team Gen: Begin generating teams using Balanced-mode..."
+	}
+
+	"GenTeam_BeginGenMode2"
+	{
+		"en"		"Team Gen: Begin generating teams using Extra Balanced-mode..."
+	}
+
+	"GenTeam_Complete"
+	{
+		"en"		"Complete!"
+	}
 }

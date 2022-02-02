@@ -1,5 +1,6 @@
 # RankMe Kento Edition + tontsakaze's Team Generator
 Rankme plugin with team generator extension.<br>
+<br>
 Team generator uses RankMe's score database to generate balanced or fully random teams, and then changes players' team.<br>
 
 

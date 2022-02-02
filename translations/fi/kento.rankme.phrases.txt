@@ -1,0 +1,820 @@
+//**********************************************  Valid Colors	********************************************************
+// {NORMAL}, {DARKRED}, {PINK}, {YELLOW}, {GREEN}, {LIGHTGREEN}, {RED}, {GRAY}, {BLUE}, {DARKBLUE}, {PURPLE}, {ORANGE} *
+//**********************************************************************************************************************
+//                                     http://i.imgur.com/q2wb8Cu.png                                                  *
+//{NORMAL} = x01 | {DARKRED} = x02 | {PINK} = x03 | {GREEN} = x04 | {YELLOW} = x09 | {LIGHTGREEN} = x06 | {RED} = x07  *
+//{GRAY} = x08 | {BLUE} = x0B | {DARKBLUE} = x0C | {PURPLE} = x0E|  {ORANGE} = x10                                     *
+//**********************************************************************************************************************
+
+"Phrases"
+{
+	//******************* PrintToChat *******************
+
+	"Chat Prefix"
+	{
+		"fi"		"{GREEN}[RankMe]"
+	}
+
+	"ResetMyRank"
+	{
+		"fi"		"{RED}Sijasi on nollattu."
+	}
+
+	"BombPickup"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pisteen/pistettä {RED}pommin poiminnasta.{NORMAL}."
+	}
+
+	"BombDropped"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {RED}menetti {3} pisteen/pistettä {RED}pommin pudotuksesta{NORMAL}."
+	}
+
+	"MVP"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pisteen/pistettä {NORMAL}olemalla {RED}MVP{NORMAL}."
+	}
+
+	"LostSuicide"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {RED}menetti {3} pisteen/pistettä {RED}itsemurhasta{NORMAL}."
+	}
+
+	"LostTK"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {RED}menetti {3} pisteen/pistettä {RED}tiimitappamalla {PINK}{4}{NORMAL}."
+	}
+
+	"CT_VIPEscaped"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{BLUE}Erikoisjoukot{NORMAL} {LIGHTGREEN}saivat {1} pistettä {RED}VIP:n pakenemisesta{NORMAL}."
+	}
+
+	"VIPEscaped"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pistettä {RED}pakenemisesta ollessaan VIP{NORMAL}."
+	}
+
+	"TR_VIPKilled"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{ORANGE}Terroristit{NORMAL} {LIGHTGREEN}saivat {1} pistettä {RED}VIP:n tappamisesta{NORMAL}."
+	}
+
+	"VIPKilled"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pistettä {RED}VIP:n tappamisesta{NORMAL}."
+	}
+
+	"GotpistettäBy"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pisteen/pistettä {NORMAL}. Syy: {RED}{4}{NORMAL}."
+	}
+
+	"IsRankedAt"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:d},{5:d},{6:d},{7:d},{8:.2f},{9:d},{10:d}"
+		"fi"		"Pelaaja{PINK} {1} {NORMAL}on sijalla {GREEN}{2}/{3}{NORMAL}, {PURPLE}{4} pistettä{NORMAL}, {LIGHTGREEN}{5} tappoa{NORMAL}, {RED}{6} kuolemaa{NORMAL}, {ORANGE}{7} avustusta{NORMAL}, {BLUE}KDR {8}{NORMAL}, {DARKRED}{9} TKs {NORMAL}and {YELLOW}{10} MVPs{NORMAL}."
+	}
+
+	"Killing"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pistettä {RED}tappamalla {NORMAL}pelaajan {PINK}{4} {PURPLE}({5}){NORMAL}."
+	}
+
+	"KillingKillerNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {LIGHTGREEN}sai {3} pistettä {RED}tappamalla {NORMAL}pelaajan {PINK}{4} {PURPLE}({5}){NORMAL}."
+	}
+
+	"KillingVictimNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pistettä {RED}tappamalla {NORMAL}pelaajan {PINK}{4} {PURPLE}({5})[{6}/{7}]{NORMAL}."
+	}
+
+	"KillingBothNotRanked"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:d},{6:d},{7:d},{8:d},{9:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2})[{6}/{7}] {LIGHTGREEN}sai {3} pistettä {RED}tappamalla {NORMAL}pelaajan {PINK}{4} {PURPLE}({5})[{8}/{9}]{NORMAL}."
+	}
+
+	"Headshot"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pisteen {RED}pääosumasta{NORMAL}."
+	}
+
+	"Flashed Kill"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pisteen {RED}valotetusta taposta{NORMAL}."
+	}
+	
+	"Thru Smoke"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pisteen {RED}ampumalla savun läpi{NORMAL}."
+	}
+
+	"Wallbang"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pisteen {RED}ampumalla seinän läpi{NORMAL}."
+	}
+
+	"First Blood"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pisteen {RED}erän ensimmäisestä taposta{NORMAL}."
+	}
+	
+	"No Scope"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s},{6:.2f}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pisteen {RED}ampumalla ilman kiikaria pelaajan {PINK}{4} {NORMAL}aseella {ORANGE}{5}{NORMAL}, pelaajan ollessa {RED}{6}{NORMAL} metrin päässä."
+	}
+
+	"TR_Planting"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{ORANGE}Terroristit{NORMAL} {LIGHTGREEN}saivat {1} pistettä {RED}pommin aktivoinnista{NORMAL}."
+	}
+
+	"Planting"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pistettä {RED}pommin aktivoinnista{NORMAL}."
+	}
+
+	"TR_Exploding"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{ORANGE}Terroristit{NORMAL} {LIGHTGREEN}saivat {1} pistettä {RED}pommin räjäytyksestä{NORMAL}."
+	}
+
+	"Exploding"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pistettä {RED}pommin räjäytyksestä{NORMAL}."
+	}
+
+	"CT_Defusing"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{BLUE}Erikoisjoukot{NORMAL} {LIGHTGREEN}saivat {1} pistettä {RED}pommin purkamisesta{NORMAL}."
+	}
+
+	"Defusing"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pistettä {RED}pommin purkamisesta{NORMAL}."
+	}
+
+	"CT_Hostage"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{BLUE}Erikoisjoukot{NORMAL} {LIGHTGREEN}saivat {1} pistettä {RED}panttivangin pelastamisesta{NORMAL}."
+	}
+
+	"Hostage"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pistettä {RED}panttivangin pelastamisesta{NORMAL}."
+	}
+
+	"CT_Round"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{BLUE}Erikoisjoukot{NORMAL} {LIGHTGREEN}saivat {1} pistettä {RED}voittamalla erän{NORMAL}."
+	}
+	
+	"CT_Round_Lose"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{BLUE}Erikoisjoukot{NORMAL} {RED}menettivät {1} pistettä {RED}häviämällä erän{NORMAL}."
+	}
+
+	"TR_Round"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{ORANGE}Terroristit{NORMAL} {LIGHTGREEN}saivat {1} pistettä {RED}voittamalla erän{NORMAL}."
+	}
+	
+	"TR_Round_Lose"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{ORANGE}Terroristit{NORMAL} {RED}menettivät {1} pistettä {RED}häviämällä erän{NORMAL}."
+	}
+
+	"PlayerJoinedChat"
+	//{1} = ClientName | {2} = PosOnConnect | {3} = PointsOnConnect | {4} = Country
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"fi"		"{PINK}{1}{NORMAL} maasta {LIGHTGREEN}{4} {NORMAL}liittyi serverille. {YELLOW}(Sija {GREEN}{2} {YELLOW}- {PURPLE}{3} {YELLOW}pistettä){NORMAL}."
+	}
+
+	"TopPlayerJoinedChat"
+	{
+		"#format"	"{1:d},{2:s},{3:d},{4:s}"
+		"fi"		"Top pelaaja {RED}{1}{NORMAL} {PINK}{2}{NORMAL} maasta {LIGHTGREEN}{4} {NORMAL}liittyi ja on sijalla {GREEN}{3}{NORMAL}."
+	}
+
+	"PlayerLeft"
+	//{1} = ClientName | {2} = rank | {3} = Reason
+	{
+		"#format"	"{1:s},{2:d},{3:s}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {NORMAL}poistui serveriltä. {YELLOW}({3})"
+	}
+
+	"NotRanked"
+	{
+		"#format"	"{1:d},{2:d}"
+		"fi"		"{RED}Sijaton. {NORMAL}Tarvitset {RED}{2}{NORMAL} tappoa saadaksesi sijan. Tällä hetkellä {LIGHTGREEN}{1}{NORMAL}."
+	}
+
+	"AssistKill"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pisteen {RED}auttaessaan pelaajaa {PINK}{4} {RED}tappamaan pelaaja {PINK}{5}{NORMAL}."
+	}
+
+	"AssistFlash"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {LIGHTGREEN}sai {3} pisteen {RED}auttaessaan pelaajaa {PINK}{4} {RED}sokeisemaan pelaajan {PINK}{5}{NORMAL}."
+	}
+
+	"AssistTeamKill"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {RED}menetti {3} pisteen {RED}auttaessaan pelaajaa {PINK}{4} {RED}tiimitappamaan pelaajan {PINK}{5}{NORMAL}."
+	}
+
+	"AssistTeamFlash"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s},{5:s}"
+		"fi"		"{PINK}{1}{PURPLE} ({2}) {RED}menetti {3} pisteen {RED}auttaessaan pelaajaa {PINK}{4} {RED}sokaisemaan joukkoepelaajan {PINK}{5}{NORMAL}."
+	}
+
+	"The rank has been reset"
+	{
+		"fi"		"{RED}Sija nollattu."
+	}
+
+	"All rank data has been reset"
+	{
+		"fi"		"{RED}Kaikkien sijatiedot nollattu."
+	}
+
+	"Usagepurge"
+	{
+		"fi"		"{RED}Käyttö: {PINK}rankpurge X (X=epäaktiivisten päivien määrä)"
+	}
+
+	"Purged"
+	{
+		"fi"		"{RED}Puhdistettu"
+	}
+
+	"UsageStatsme2"
+	{
+		"fi"		"{RED}Käyttö: {PINK}sm_statsme2 <nimi | #sija | steam>"
+	}
+	
+	"Hide Rankme Chat"
+	{
+		"fi"		"{RED}Piilota Rankme chat-viestit."
+	}
+	
+	"Show Rankme Chat"
+	{
+		"fi"		"{LIGHTGREEN}Näytä Rankme chat-viestit."
+	}
+	
+	"CT_Win"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{BLUE}Erikoisjoukot{NORMAL} {LIGHTGREEN}saivat {1} pistettä {RED}voittamalla pelin{NORMAL}."
+	}
+	
+	"TR_Win"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{ORANGE}Terroristit{NORMAL} {LIGHTGREEN}saivat {1} pistettä {RED}voittamalla pelin{NORMAL}."
+	}
+	
+	"CT_Lose"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{BLUE}Erikoisjoukot {RED}menettivät {1} pistettä {RED}häviämällä pelin{NORMAL}."
+	}
+	
+	"TR_Lose"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{ORANGE}Terroristit {RED}menettivät {1} pistettä {RED}häviämällä pelin{NORMAL}."
+	}
+	
+	"Draw"
+	{
+		"#format"	"{1:d}"
+		"fi"		"{RED}Tasapeli{NORMAL}, {PINK}molemmat joukkoeet {LIGHTGREEN}saivat {1} pistettä{NORMAL}."
+	}
+	
+	"RankCooldown"
+	{
+		"#format"	""
+		"fi"		"{RED}We know you are the best player, please stop spamming!"
+		"fi"		"{RED}Tiedämme, että olet paras pelaaja, lopeta spämmääminen!"
+	}
+	
+	//****************** PrintHintText ******************
+
+	"PlayerJoinedHint"
+	{
+		"#format"	"{1:s},{2:d},{3:d},{4:s}"
+		"fi"		"<font color='#28FF28'>Info</font> \n <font color='#B15BFF'>{1}</font> maasta <font color='#00FF7F'>{4}</font> liittyi serverille. \n Sija <font color='#28FF28'>{2}</font> - <font color='#E800E8'>{3}</font> pistettä"
+	}
+
+	"TopPlayerJoinedHint"
+	{
+		"#format"	"{1:d},{2:s},{3:d},{4:s}"
+		"fi"		"<font color='#28FF28'>Info</font> \n Top <font color='#FF0000'>{1}</font> player <font color='#B15BFF'>{2}</font> from <font color='#00FF7F'>{4}</font> connected \n Currently rank <font color='#28FF28'>{3}</font>"
+		"fi"		"<font color='#28FF28'>Info</font> \n Top pelaaja <font color='#FF0000'>{1}</font> <font color='#B15BFF'>{2}</font> maasta <font color='#00FF7F'>{4}</font> liittyi \n Sijalla <font color='#28FF28'>{3}</font>"
+	}
+
+	//***************** Menu (No Colors) *****************
+
+	"Deaths"
+	{
+		"fi"		"Kuolemat"
+	}
+
+
+	"Kills"
+	{
+		"fi"		"Tapot"
+	}
+
+	"VIPStats"
+	{
+		"fi"		"VIP tilastot"
+	}
+
+	"VIPEscapes"
+	{
+		"fi"		"VIP pakenemiset"
+	}
+
+	"VIPsKilled"
+	{
+		"fi"		"VIP tapot"
+	}
+
+	"Showing"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"fi"		"Näytetään {1} - {2} / {3}\n"
+	}
+
+	"Next"
+	{
+		"fi"		"Seuraava"
+	}
+
+	"Back"
+	{
+		"fi"		"Takaisin"
+	}
+
+	"KnifeKills"
+	{
+		"fi"		"Puukkotapot"
+	}
+
+	"TaserKills"
+	{
+		"fi"		"Taser-tapot"
+	}
+
+	"Position"
+	{
+		"fi"		"Sija"
+	}
+
+	"Points"
+	{
+		"fi"		"Pistetilanne"
+	}
+
+	"BasicStats"
+	{
+		"fi"		"Perustiedot"
+	}
+
+	"KillsDeathsAssists"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"fi"		"Tapot: {1}   Kuolemat: {2}   Avustukset: {3}"
+	}
+
+	"AssistTeams"
+	{
+		"#format"	""
+		"fi"		"Avustetut tiimitapot"
+	}
+
+	"Suicides"
+	{
+		"fi"		"Itsemurhat"
+	}
+
+	"RoundStats"
+	{
+		"fi"		"Erätiedot"
+	}
+
+	"TRWins"
+	{
+		"fi"		"TR voitot"
+	}
+
+	"CTWins"
+	{
+		"fi"		"CT voitot"
+	}
+
+	"HitStats"
+	{
+		"fi"		"Osumatilastot"
+	}
+
+	"Shots"
+	{
+		"fi"		"Laukaukset"
+	}
+
+	"Hits"
+	{
+		"fi"		"Osumat"
+	}
+
+	"Accuracy"
+	{
+		"fi"		"Tarkkuus"
+	}
+
+	"BombHostagesStats"
+	{
+		"fi"		"Pommi/Panttivanki -tiedot"
+	}
+
+	"PlantedBombs"
+	{
+		"fi"		"Pommiaktivoinnit"
+	}
+
+	"DefusedBombs"
+	{
+		"fi"		"Pommipurut"
+	}
+
+	"ExplodedBombs"
+	{
+		"fi"		"Pommin räjäytykset"
+	}
+
+	"RescuedHostages"
+	{
+		"fi"		"Pelastetut panttivangit"
+	}
+
+	"OtherStats"
+	{
+		"fi"		"Muut tiedot"
+	}
+
+	"TimeConnected"
+	{
+		"#format"	"{1:d},{2:d},{3:d}"
+		"fi"		"Peliaika: {1} tuntia, {2} minuuttia, {3} sekunttia"
+	}
+
+	"Head"
+	{
+		"fi"		"Pää"
+	}
+
+	"Chest"
+	{
+		"fi"		"Rinta"
+	}
+
+	"Stomach"
+	{
+		"fi"		"Maha"
+	}
+
+	"LeftArm"
+	{
+		"fi"		"Vasen käsi"
+	}
+
+	"LeftLeg"
+	{
+		"fi"		"Vasen jalka"
+	}
+
+	"RightArm"
+	{
+		"fi"		"Oikea käsi"
+	}
+
+	"RightLeg"
+	{
+		"fi"		"Oikea jalka"
+	}
+
+	"Next9Players"
+	{
+		"fi"		"Seuraavat 9 pelaajaa"
+	}
+
+	"WeaponsStats"
+	{
+		"fi"		"Asetiedot"
+	}
+
+	"Headshots"
+	{
+		"fi"		"Pääosumat"
+	}
+
+	"Assists"
+	{
+		"fi"		"Avustukset"
+	}
+
+	"TKs"
+	{
+		"fi"		"TKs"
+	}
+
+	"RankMe Menu"
+	{
+		"fi"		"RankMe Menu"
+	}
+
+	"My Rank"
+	{
+		"fi"		"Minun sijani"
+	}
+
+	"Reset My Rank"
+	{
+		"fi"		"Nollaa sijasi"
+	}
+
+	"My Stats"
+	{
+		"fi"		"Tietoni"
+	}
+
+	"Show Other Players Stats"
+	{
+		"fi"		"Näytä muiden pelaajien tiedot"
+	}
+
+	"Session"
+	{
+		"fi"		"Sessio"
+	}
+
+	"My HitBox Stats"
+	{
+		"fi"		"HitBox-tietoni"
+	}
+
+	"My Weapon Stats"
+	{
+		"fi"		"Asetietoni"
+	}
+
+	"Show Players Above Me"
+	{
+		"fi"		"Näytä minua korkeammat pelaajat"
+	}
+
+	"TOP 10"
+	{
+		"fi"		"TOP 10"
+	}
+
+	"TOP Kills"
+	{
+		"fi"		"TOP Tapot"
+	}
+
+	"TOP Deaths"
+	{
+		"fi"		"TOP Kuolemat"
+	}
+
+	"TOP Assists"
+	{
+		"fi"		"TOP Avustukset"
+	}
+
+	"TOP KDR"
+	{
+		"fi"		"TOP KDR"
+	}
+
+	"TOP TK"
+	{
+		"fi"		"TOP Tiimitapot"
+	}
+
+	"TOP Weapon"
+	{
+		"fi"		"TOP Ase"
+	}
+
+	"TOP Accuracy"
+	{
+		"fi"		"TOP Tarkkuus"
+	}
+
+	"TOP HS"
+	{
+		"fi"		"TOP Pääosumat"
+	}
+
+	"TOP Time Connected"
+	{
+		"fi"		"TOP peliaika"
+	}
+
+	"TOP Points"
+	{
+		"fi"		"TOP Pisteet"
+	}
+
+	"Reset a player rank"
+	{
+		"fi"		"Nollaa pelaajan sija"
+	}
+
+	"Reset all the rank"
+	{
+		"fi"		"Nollaa kaikkien sija"
+	}
+
+	"MVPs"
+	{
+		"fi"		"MVPs"
+	}
+
+	"TOP MVP"
+	{
+		"fi"		"TOP MVP"
+	}
+
+	"KPR"
+	{
+		"fi"		"KPR"
+	}
+
+	"DPR"
+	{
+		"fi"		"DPR"
+	}
+
+	"Damage"
+	{
+		"fi"		"Vahinko"
+	}
+	
+	"TOP Damage"
+	{
+		"fi"		"TOP Vahinko"
+	}
+	
+	"MatchWins"
+	{
+		"fi"		"Voitetut pelit"
+	}
+	
+	"MatchLosses"
+	{
+		"fi"		"Hävityt pelit"
+	}
+	
+	"MatchDraws"
+	{
+		"fi"		"Tasapelit"
+	}
+	
+	"First Bloods"
+	{
+		"fi"		"Erän ensimmäiset tapot"
+	}
+
+	"Thru Smokes"
+	{
+		"fi"		"Savun läpi"
+	}
+
+	"Flashed Kills"
+	{
+		"fi"		"Sokaistut tapot"
+	}
+
+	"AssistFlashes"
+	{
+		"fi"		"Avustetut sokaisut"
+	}
+
+	"AssistTeamFlashes"
+	{
+		"fi"		"Avustetut tiimisokaisut"
+	}
+	
+	"NoScopeStats"
+	{
+		"fi"		"No Scope -tiedot"
+	}
+	
+	"NoScopes"
+	{
+		"fi"		"No Scopes"
+	}
+	
+	"Farthest"
+	{
+		"fi"		"Pisimmät"
+	}
+
+	"TOP First Blood"
+	{
+		"fi"		"TOP Ensimmäinen tappo"
+	}
+
+	"TOP Noscope"
+	{
+		"fi"		"TOP Noscope"
+	}
+
+	"TOP Noscope Distance"
+	{
+		"fi"		"TOP Noscope Etäisyys"
+	}
+
+	"TOP Flashed Kill"
+	{
+		"fi"		"TOP Sokaistu tappo"
+	}
+
+	"TOP Thru Smoke"
+	{
+		"fi"		"TOP Savun läpi"
+	}
+
+	"TOP Wallbang"
+	{
+		"fi"		"TOP Seinän läpi"
+	}
+
+	"Wallbangs"
+	{
+		"fi"		"Seinän läpi"
+	}
+
+	"GenTeam_HowToCommand"
+	{
+		"fi"		"Usage: sm_randomteams <0/1/2> || 0=Satunnainen, 1=Tasoitettu, 2=Extra tasoitettu"
+	}
+
+	"GenTeam_Fail"
+	{
+		"fi"		"Team Gen: Ei tarpeeksi pisteytettyjä pelaajia joukkoiden generointiin!"
+	}
+
+	"GenTeam_ResultInfo"
+	{
+		"#format"	"{1:s},{2:d},{3:d}"
+		"fi"		"{1} | KA: {2} | YHT: {3}"
+	}
+}

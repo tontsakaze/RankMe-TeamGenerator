@@ -176,11 +176,15 @@ Team generator uses RankMe's score database to generate balanced or fully random
 [lok1](https://forums.alliedmods.net/showthread.php?t=155621) - Developed the original RankMe plugin<br>
 [benscobie](https://github.com/benscobie/sourcemod-rankme) - RankMe Kento Edition plugin is improved from his version<br>
 [pracc](http://hlmod.ru/resources/cs-go-rankme-web.132) - Code of kill assist is edited from his rankme<br>
-[TR1D](https://github.com/TR1D) - Thanks for his Russian translation<br>
-[shanapu](https://github.com/shanapu) - Thanks for his German translation<br>
-[2389736818](https://github.com/2389736818) - Thanks for his Simplified Chinese translation<br>
+[TR1D](https://github.com/TR1D) - Thanks for his Russian translation of RankMe Kento Edition<br>
+[shanapu](https://github.com/shanapu) - Thanks for his German translation of RankMe Kento Edition<br>
+[2389736818](https://github.com/2389736818) - Thanks for his Simplified Chinese translation of RankMe Kento Edition<br>
 [Kxnrl](https://github.com/Kxnrl) - Thanks for his rankme cache<br>
-[CrazyHackGUT](https://github.com/CrazyHackGUT) - Thanks for his optimization<br>
-[paulocrash](https://github.com/paulocrash) - Thanks for his Português-BR translation<br>
-[axyxx](https://github.com/awyxx) - Thanks for his Portuguese translation<br>
-[tontsakaze](https://github.com/tontsakaze) - Creator of team generator code and Finnish translation<br>
+[CrazyHackGUT](https://github.com/CrazyHackGUT) - Thanks for his optimization of RankMe Kento Edition<br>
+[paulocrash](https://github.com/paulocrash) - Thanks for his Português-BR translation of RankMe Kento Edition<br>
+[axyxx](https://github.com/awyxx) - Thanks for his Portuguese translation of RankMe Kento Edition<br>
+[tontsakaze](https://github.com/tontsakaze) - Creator of team generator code and Finnish translation of RankMe Kento Edition<br>
+
+
+## Like my work?
+<a href="https://www.paypal.com/donate/?hosted_button_id=3NMPCYLBRQJXA"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"></a>

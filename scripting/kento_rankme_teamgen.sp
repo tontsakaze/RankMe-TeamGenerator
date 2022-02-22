@@ -1,6 +1,6 @@
 #pragma semicolon  1
 
-#define PLUGIN_VERSION "1.0.TeamGenerator.3.0.3.Kento.33.3"
+#define PLUGIN_VERSION "3.0.3.Kento.33.3 + 1.0.TeamGen"
 
 #include <sourcemod> 
 #include <adminmenu>
@@ -78,6 +78,7 @@ char MSG[64];
 #include <kento_rankme_teamgen/cvars>
 #include <kento_rankme_teamgen/natives>
 #include <kento_rankme_teamgen/cmds>
+#include <kento_rankme_teamgen/teamgen>
 
 public Plugin myinfo =  {
     name = "RankMe+TeamGen", 

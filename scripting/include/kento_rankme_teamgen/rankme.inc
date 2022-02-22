@@ -431,6 +431,7 @@ public void __pl_rankme_SetNTVOptional()
     MarkNativeAsOptional("RankMe_GivePoint");
     MarkNativeAsOptional("RankMe_GetRank");
     MarkNativeAsOptional("RankMe_GetPoints");
+    MarkNativeAsOptional("RankMe_GetOverallRounds");
     MarkNativeAsOptional("RankMe_GetStats");
     MarkNativeAsOptional("RankMe_GetSession");
     MarkNativeAsOptional("RankMe_GetWeaponStats");
@@ -468,6 +469,15 @@ native void RankMe_GetRank(int client, RankCallback callback, any data = 0);
  * @return        The score of the client
  *********************************************************/
 native int RankMe_GetPoints(int client);
+
+/*********************************************************
+ * Get the played rounds (CT+T) of a player on the server
+ *
+ * @param client    The client index of the player to get the rank
+ * @param data    Any data you would like that return on the callback
+ * @return        The score of the client
+ *********************************************************/
+native int RankMe_GetOverallRounds(int client);
 
 /*********************************************************
  * Get stats of a player on the server

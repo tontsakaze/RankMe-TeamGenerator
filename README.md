@@ -7,7 +7,7 @@ Team generator uses RankMe's score database to generate balanced or fully random
 ## Install
 1. Upload .smx, include and translation -files to your server
 2. Plugin will automatically create a config file "cfg/sourcemod/kento_rankme.cfg"
-3. If you want to use MySQL, change "rankme_mysql" to 1, and add the following to your databases.cfg -file:
+3. If you want to use MySQL, change "rankme_mysql" to 1 in kento_rankme.cfg -file, and add the following to your databases.cfg -file:
 ```
 "rankme" 
  {        
@@ -172,8 +172,9 @@ Team generator uses RankMe's score database to generate balanced or fully random
 
 
 ## Credits
-[lok1](https://forums.alliedmods.net/showthread.php?t=155621) - Developed the original RankMe plugin that this plugin is based on<br>
-[benscobie](https://github.com/benscobie/sourcemod-rankme) - This plugin is improved from his version<br>
+[rogeraabbccdd](https://github.com/rogeraabbccdd/Kento-Rankme) - Developed the RankMe Kento Edition plugin that this plugin is based on<br>
+[lok1](https://forums.alliedmods.net/showthread.php?t=155621) - Developed the original RankMe plugin<br>
+[benscobie](https://github.com/benscobie/sourcemod-rankme) - RankMe Kento Edition plugin is improved from his version<br>
 [pracc](http://hlmod.ru/resources/cs-go-rankme-web.132) - Code of kill assist is edited from his rankme<br>
 [TR1D](https://github.com/TR1D) - Thanks for his Russian translation<br>
 [shanapu](https://github.com/shanapu) - Thanks for his German translation<br>

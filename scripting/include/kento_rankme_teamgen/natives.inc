@@ -3,6 +3,7 @@ public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max
     CreateNative("RankMe_GivePoint", Native_GivePoint);
     CreateNative("RankMe_GetRank", Native_GetRank);
     CreateNative("RankMe_GetPoints", Native_GetPoints);
+    CreateNative("RankMe_GetOverallRounds", Native_GetOverallRounds);
     CreateNative("RankMe_GetStats", Native_GetStats);
     CreateNative("RankMe_GetSession", Native_GetSession);
     CreateNative("RankMe_GetWeaponStats", Native_GetWeaponStats);
@@ -180,6 +181,12 @@ public int Native_GetPoints(Handle plugin, int numParams)
 {
     int client = GetNativeCell(1);
     return g_aStats[client].SCORE;
+}
+
+public int Native_GetOverallRounds(Handle plugin, int numParams)
+{
+    int client = GetNativeCell(1);
+    return (g_aStats[client].ROUNDS_TR + g_aStats[client].ROUNDS_CT);
 }
 
 public int Native_GetStats(Handle plugin, int numParams)
